@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MovieFlix</title>
+    <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+    <img src="../images/movieflix.png" alt="Logo MovieFlix" onclick="menubtn()" style="cursor: pointer;" />
+
+    <nav>
+        <button type="button" class="btn" onclick="window.location.href = 'filme.html'" style="cursor: pointer;">Filmes</button>
+        <button type="button" class="btn" onclick="window.location.href = 'serie.html'" style="cursor: pointer;">Séries</button>
+        <button type="button" class="btn" onclick="window.location.href = 'anime.html'" style="cursor: pointer;">Anime</button>
+        <button type="button" class="btn" onclick="window.location.href = 'infantil.html'" style="cursor: pointer;">Infantil</button>
+    </nav>
+
+    <div class="banner-container">
+        <img src="../images/spidertitle.png" alt="" class="spider-title">
+        <img src="../images/spiderbanner.png" alt="Banner do Filme Spider" class="banner-image" style="cursor: pointer;" onclick="filme()" />
+        <div class="gradient-overlay"></div>
+
+        <div class="banner-content">
+            <div class="buttons">
+                <button type="button" class="btn-spider-detalhes">Mais Detalhes</button>
+                <button type="button" class="btn-spider-plus">+</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="home.js"></script>
+</body>
+</html>
