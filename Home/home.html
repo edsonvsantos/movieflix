@@ -7,18 +7,20 @@
     <link rel="stylesheet" href="home.css" />
 </head>
 <body>
+    
+    <div class="bannerMF">
     <img src="../images/movieflix.png" alt="Logo MovieFlix" onclick="menubtn()" style="cursor: pointer;" />
+    </div>
 
     <nav>
-        <button type="button" class="btn" onclick="window.location.href = 'filme.html'" style="cursor: pointer;">Filmes</button>
-        <button type="button" class="btn" onclick="window.location.href = 'serie.html'" style="cursor: pointer;">Séries</button>
-        <button type="button" class="btn" onclick="window.location.href = 'anime.html'" style="cursor: pointer;">Anime</button>
-        <button type="button" class="btn" onclick="window.location.href = 'infantil.html'" style="cursor: pointer;">Infantil</button>
+        <button type="button" class="btn" onclick="window.location.href = '/filme/filme.html'" style="cursor: pointer;">Filmes |</button>
+        <button type="button" class="btn" onclick="window.location.href = '/serie/serie.html'" style="cursor: pointer;">Séries |</button>
+        <button type="button" class="btn" onclick="window.location.href = '/anime/anime.html'" style="cursor: pointer;">Anime</button>
     </nav>
 
     <div class="banner-container">
         <img src="../images/spidertitle.png" alt="" class="spider-title">
-        <img src="../images/spiderbanner.png" alt="Banner do Filme Spider" class="banner-image" style="cursor: pointer;" onclick="filme()" />
+        <img src="../images/spiderbanner.png" alt="Banner do Filme Spider" class="banner-image" style="cursor: pointer;" onclick="window.location.href = '/filme/filme.html'" />
         <div class="gradient-overlay"></div>
 
         <div class="banner-content">

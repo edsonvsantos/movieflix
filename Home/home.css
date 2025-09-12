@@ -10,10 +10,22 @@ body {
 .btn {
     color: #AAA9A9;
     background-color: transparent;
-    border: none;
+    border: none;   
     cursor: pointer;
     font-family: inherit;
+    font-size: 20px;
 }
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
 
 /* Botão "Mais Detalhes" */
 .btn-spider-detalhes {
@@ -90,4 +102,11 @@ body {
     height: 242px;
     object-fit: contain;
     z-index: 2;
+}
+
+.bannerMF{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 100px;
 }
