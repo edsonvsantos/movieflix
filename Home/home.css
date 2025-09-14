@@ -69,30 +69,29 @@ nav {
 .banner-container {
     position: relative;
     left: 20%;
-    width: 646px;
-    height: 1148px;
     border-radius: 30px;
-    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
     display: flex;
     flex-wrap: wrap; 
     gap: 10px;
+    overflow: hidden;
 }
 
-/* Gradiente overlay cobrindo todo o banner */
 .gradient-overlay {
+    overflow-y: hidden;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 57%; /* 100% para cobrir tudo */
+    height: 100%; /* 100% para cobrir tudo */
     border-radius: 30px;
     background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0));
     pointer-events: none;
     z-index: 1;
 }
+
 
 .spider-title{
     display: flex;
@@ -116,13 +115,11 @@ nav {
 }
 
 .bannerFilmesContainer {
-    width: calc(4 * 300px + 3 * 10px); /* 4 banners + 3 gaps */
     display: flex;
     gap: 10px;
     flex-wrap: nowrap;
     align-items: center;
     overflow-x: auto;
-    height: 200px;
 }
 
 .bannerFilme {
@@ -132,3 +129,4 @@ nav {
     cursor: pointer;
     border-radius: 10px;
 }
+
