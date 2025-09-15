@@ -1,9 +1,22 @@
+/* Evite aplicar background em tudo com * */
 body {
     background-color: black;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     color: white;
+    overflow-x: hidden;
+    padding-bottom: 10vh;
+    font-size: 25px;
+}
+
+.btn {
+    color: #AAA9A9;
+    background-color: transparent;
+    border: none;   
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 20px;
 }
 
 nav {
@@ -16,13 +29,85 @@ nav {
     padding: 15px 0;
 }
 
-.btn {
-    color: #AAA9A9;
-    background-color: transparent;
-    border: none;   
-    cursor: pointer;
-    font-family: inherit;
-    font-size: 20px;
+
+/* Botão "Mais Detalhes" */
+.btn-spider-detalhes {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    height: 70px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0 20px;
+    position: absolute;
+    top: 505px;
+    left: 30%;
+    width: 300px;
+    height: 105px;
+    z-index: 2;
+}
+
+/* Botão "+" */
+.btn-spider-plus {
+    background-color: #514F4F;
+    color: white;
+    border-radius: 50%; /* círculo perfeito */
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0;
+    position: absolute;
+    top: 513px;
+    left: 10%   ;
+    width: 90px;
+    height: 90px;
+    z-index: 2;
+}
+
+.banner-container {
+    position: relative;
+    left: 20%;
+    border-radius: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+    overflow: hidden;
+}
+
+.gradient-overlay {
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* 100% para cobrir tudo */
+    border-radius: 30px;
+    background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0));
+    pointer-events: none;
+    z-index: 1;
+}
+
+
+.spider-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    position: absolute;
+    top: 37px;
+    left: 33px;
+    width: 610px;
+    height: 242px;
+    object-fit: contain;
+    z-index: 2;
 }
 
 .bannerMF {
@@ -32,18 +117,28 @@ nav {
     height: 100px;
 }
 
-.bannerFilmesContainer {
+.bannerFilmesConteiner {
     display: flex;
     gap: 10px;
     flex-wrap: nowrap;
-    align-items: center;
     overflow-x: auto;
+    height: auto;
+    min-height: 20vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .bannerFilme {
+    justify-content: center;
+    align-items: center;
+    display: flex;
     width: 300px;
     height: 200px;
     object-fit: cover;
     cursor: pointer;
     border-radius: 10px;
 }
+
+
+
